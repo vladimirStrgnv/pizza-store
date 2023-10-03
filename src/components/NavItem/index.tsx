@@ -1,8 +1,9 @@
 import { NavLink } from "react-router-dom";
+import './index.scss';
 
 const NavItem = ({text}) => {
   return (
-    <a >{text}</a>
+    <a className="nav-item">{text}</a>
   )
 }
 

@@ -1,0 +1,47 @@
+.promotion {
+    position: relative;
+    padding: 150px 0 112px 0;
+
+}
+
+.promotion__pizza-img {
+    display: block;
+    position: absolute;
+    right: -19%;
+    top: -20px;
+    max-height: 630px;
+    transform: scale(1.1);
+}
+
+.promotion__title {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Alegreya";
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.promotion__description {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: "Roboto";
+    max-width: 450px;
+    line-height: 36px;
+}
+
+.promotion__choose-pizza-btn {
+    margin-bottom: 277px;
+    width: 304px;
+    height: 60px;
+    background-color: rgba(229, 45, 45, 1);
+    font-weight: 700;
+    font-family: "Alegreya";
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.promotion__advertising-card-list { 
+    display: flex;
+    justify-content: space-between;
+}

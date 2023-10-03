@@ -1,0 +1,22 @@
+.order-info {
+    display: flex;
+    align-items: center;
+}
+
+.order-info__description-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-info__title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Alegreya';
+    font-weight: 900;
+}
+
+.order-info__order-description {
+    color: rgba(132, 138, 154, 1);
+    font-size: 0.70rem;
+    font-family: 'Roboto';
+}
