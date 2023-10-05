@@ -10,6 +10,7 @@ const DeliveryInfoSection = () => {
             <ul className="delivery-info__stage-list">
                 {deliveryStagesData.map((stageData, index) => (
                 <DeliveryStageCard
+                    key={index}
                     imgIndex={index}
                     title={stageData.title}
                     text={stageData.text}

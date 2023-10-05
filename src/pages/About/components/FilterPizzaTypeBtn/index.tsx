@@ -1,8 +1,11 @@
 import './index.scss';
 
-const FilterPizzaTypeBtn = ({text}) => {
+const FilterPizzaTypeBtn = ({title, img, onClick, value}) => {
   return (
-    <button className='pizza-filter-btn'>{text}</button>
+    <div className='pizza-filter'>
+      <button className='pizza-filter__btn' onClick={()=> onClick(value)}>{title}</button>
+      <img src={require(`../../assets/pizza-type/${img}.png`)} className='pizza-filter__img' alt="pizza-filter-img" />
+    </div>
   )
 }
 

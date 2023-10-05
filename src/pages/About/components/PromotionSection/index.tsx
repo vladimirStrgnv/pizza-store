@@ -1,6 +1,7 @@
 import "./index.scss";
 import { promoCardsData } from "../../consts";
 import PromotionCard from "../PromotionCard";
+import PromotionCarousel from "../PromotionCarousel";
 
 
 const PromotionSection = () => {
@@ -19,11 +20,14 @@ const PromotionSection = () => {
       ></img>
       <ul className="promotion__advertising-card-list">
         {promoCardsData.map((cardData, index) => (
-          <li className="promotion__advertising-card-list-item">
+          <li className="promotion__advertising-card-list-item" key={index}>
             <PromotionCard title={cardData.title} text={cardData.text} imgSrc={index}></PromotionCard>
           </li>
         ))}
       </ul>
+      <div className="promotion__carousel-wrapper">
+        <PromotionCarousel></PromotionCarousel>
+      </div>
     </section>
   );
 };

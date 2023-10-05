@@ -1,0 +1,179 @@
+.pizza-card {
+    position: relative;
+    height: 540px;
+    max-width: 304px;
+    padding:  20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: rgba(165, 169, 176, 0.3) 1px solid;
+}
+
+.pizza-card__type {
+    top: 12px;
+    left: 12px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pizza-card:hover .pizza-card__type {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pizza-card__img-container {
+    position: relative;
+    margin-bottom: 10px;
+    height: 212px;
+}
+
+.pizza-card__big-size-outline {
+    top: 0;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px rgba(220, 223, 226, 1) dashed;
+}
+
+.pizza-card__medium-size-outline {
+    top: 7%;
+    left: 7%;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px rgba(220, 223, 226, 1) dashed;
+}
+
+.pizza-card__small-size-outline {
+    top: 15%;
+    left: 15%;
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px rgba(220, 223, 226, 1) dashed;
+}
+
+.pizza-card__img {
+    transition: 0.5s;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-position: center;
+    z-index: 10;
+}
+
+.pizza-card__img--big {
+    transform: scale(1.1);
+
+}
+.pizza-card__img--medium {
+    transform: scale(0.9);
+}
+
+.pizza-card__img--small {
+    transform: scale(0.75);
+}
+
+.pizza-card__info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pizza-card__title {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Alegreya';
+    font-weight: 700;
+}
+
+.pizza-card__composition {
+    max-width: 264px;
+    max-height: 36px;
+    text-align: center;
+    font-size: 0.7rem;
+    color: rgba(132, 138, 154, 1);
+    font-family: 'Roboto';
+    line-height: 18px;
+}
+
+.pizza-card__order-params-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.pizza-card__size-title {
+    font-size: 0.7rem;
+    font-family: 'Roboto';
+
+}
+
+.pizza-card__size-variants {
+    position: relative;
+    display: flex;
+    max-width: 182px;
+    background-color: rgba(239, 240, 241, 1);
+    border: 1px solid rgba(239, 240, 241, 1);
+}
+
+.pizza-card__choose-variant-btn {
+    position: relative;
+    width: 58px;
+    height: 28px;
+    font-size: 0.7rem;
+    color: rgba(130, 144, 159, 1);
+    font-family: 'Roboto';
+    font-weight: 700;
+    z-index: 10;
+}
+
+.pizza-card__size-slider {
+    position: absolute;
+    width: 57px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.4s;
+}
+
+.pizza-card__size-slider--small{
+    left: 0%;
+}
+
+.pizza-card__size-slider--medium {
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%) 
+}
+
+.pizza-card__size-slider--big{
+    left: 100%;
+    transform: translate(-100%, 0%) }
+
+.pizza-card__min-cost {
+    font-size: 1.3rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.pizza-card__order-btn {
+    font-family: 'Alegreya';
+    font-weight: 700;
+    background-color: rgba(229, 45, 45, 1);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 14px 69px;
+    border-radius: 5px;
+}

@@ -7,7 +7,7 @@ const AdvantagesSection = () => {
     <section className="container advantages">
       <ul className="advantages__list">
         {advantagesCardsData.map((advantage, index) => (
-          <li className="advantages__list-item">
+          <li className="advantages__list-item" key={index}>
             <AdvantagesCard
               imgIndex={index}
               title={advantage.title}
