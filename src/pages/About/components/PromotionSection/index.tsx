@@ -1,16 +1,15 @@
 import "./index.scss";
 import { promoCardsData } from "../../consts";
 import PromotionCard from "../PromotionCard";
-import { title } from "process";
 
 
 const PromotionSection = () => {
   return (
-    <section className="promotion">
+    <section className="promotion container">
       <div className="promotion__order-info-container">
         <h2 className="promotion__title">Пицца на заказ</h2>
         <p className="promotion__description">
-          Бесплатная и быстрая доставка за час в любое удобное для вас время
+          Бесплатная и быстрая доставка за час в любое удобное для вас время
         </p>
         <button className="promotion__choose-pizza-btn">Выбрать пиццу</button>
       </div>

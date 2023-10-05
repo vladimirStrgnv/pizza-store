@@ -1,0 +1,17 @@
+.delivery-info {
+    padding: 65px 0 80px;
+    background-color: rgba(248, 246, 243, 1);
+}
+
+.delivery-info__title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Alegreya';
+    font-weight: 700;
+}
+
+.delivery-info__stage-list {
+    display: flex;
+    justify-content: space-between;
+}

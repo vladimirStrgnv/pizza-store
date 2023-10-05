@@ -1,0 +1,36 @@
+.advantages-card {
+    width: 757px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-card--reverse {
+    flex-direction: row-reverse;
+}
+
+
+.advantages-card__img {
+    width: 314px;
+    height: 314px;
+    border-radius: 40%;
+}
+
+.advantages-card__info {
+    max-width: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advantages-card__title {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-family: 'Alegreya';
+    font-weight: 700;
+}
+
+.advantages-card__description {
+    font-family: 'Roboto';
+    font-size: 0.75rem;
+
+}

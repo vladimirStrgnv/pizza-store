@@ -1,22 +1,20 @@
-.order-info {
+.visitors-info {
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
-    overflow: hidden;
 }
 
-.order-info__title {
-    font-size: 1rem;
+.visitors-info__number {
+    font-size: 1.35rem;
     text-transform: uppercase;
     font-family: 'Alegreya';
     font-weight: 900;
+    line-height: 32px;
     white-space: nowrap; 
 }
 
-.order-info__order-description {
+.visitors-info__working-days {
     color: rgba(132, 138, 154, 1);
     font-size: 0.70rem;
     font-family: 'Roboto';
-    white-space: nowrap; 
 }

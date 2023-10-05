@@ -1,0 +1,31 @@
+.footer {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.footer__container {
+    padding: 32px 0;
+    display: flex;
+}
+
+.footer__logo-container {
+    width: 14%;
+    height: 100%; 
+}
+
+.footer__logo {
+    max-height: 52px;
+    filter: invert(100%);
+}
+
+.footer__second-part {
+    flex-grow: 1;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__priv-policy {
+    color: rgb(255, 255, 255);
+}

@@ -98,8 +98,19 @@ body {
 a { color: inherit; } 
 
 .container {
-  max-width: 1320px;
-  width: 100%;
-  border: black 1px solid;
-  margin: 0 auto;
+    max-width: 1320px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 11px;
+    }
 }

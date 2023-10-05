@@ -1,8 +1,12 @@
 import './index.scss';
 
-const Logo = () => {
+interface LogoProps {
+  styles?: string
+}
+
+const Logo: React.FC<LogoProps> = ({styles = ''}) => {
   return (
-    <div className='logo'></div>
+    <div className={`logo ${styles}`}></div>
   )
 }
 

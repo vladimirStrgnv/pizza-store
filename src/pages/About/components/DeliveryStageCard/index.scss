@@ -1,0 +1,28 @@
+.delivery-stage {
+    max-width: 416px;
+    max-height: 144px;
+    padding: 36px 24px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.delivery-stage__img {
+    margin-right: 20px;
+}
+
+.delivery-stage__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-stage__title {
+    font-family: 'Alegreya';
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+.delivery-stage__description {
+    font-size: 0.7rem;
+    font-family: 'Roboto';
+    line-height: 18px;
+}

@@ -1,0 +1,29 @@
+.gallery {
+    max-width: 1920px;
+}
+
+.gallery__title {
+    text-align: center;
+    font-size: 2.9rem;
+    font-family: 'Alegreya';
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.gallery__inst-link {
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: rgba(132, 138, 154, 1);
+}
+
+.gallery__images-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.gallery__images-list-item {
+    flex: 0 0 20%; 
+}

@@ -1,10 +1,18 @@
 import PromotionSection from "./components/PromotionSection";
+import PizzaAssortmentSection from "./components/PizzaAssortmentSection";
+import DeliveryInfoSection from "./components/DeliveryInfoSection";
+import AdvantagesSection from "./components/AdvantagesSection";
+import GallerySection from "./components/GallerySection";
 
 const About = () => {
   return (
-    <div className='container'>
+    <main>
         <PromotionSection></PromotionSection>
-    </div>
+        <PizzaAssortmentSection></PizzaAssortmentSection>
+        <DeliveryInfoSection></DeliveryInfoSection>
+        <AdvantagesSection></AdvantagesSection>
+        <GallerySection></GallerySection>
+    </main>
   )
 }
 
