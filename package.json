@@ -1,5 +1,5 @@
-{  
-  "homepage": "./",
+{
+  "homepage": "https://vladimirStrgnv.github.io/pizza-store",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "@types/node": "^16.18.55",
     "@types/react": "^18.2.24",
     "@types/react-dom": "^18.2.8",
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.16.0",
@@ -23,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
