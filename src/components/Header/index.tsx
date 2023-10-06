@@ -1,12 +1,12 @@
+import "./index.scss";
+import {useState} from "react";
 import Logo from "../Logo";
 import Nav from "../Nav";
-import "./index.scss";
 import VisitorsInfo from "../VisitorsInfo";
 import OrderInfo from "../OrderInfo";
 import ToggleLangBtn from "../ToggleLangBtn";
 import Cart from "../Cart";
 import BurgerIcon from "../BurgerIcon";
-import {useState} from "react";
 import BurgerMenu from "../BurgerMenu";
 
 const Header = () => {

@@ -6,20 +6,19 @@
 .footer__container {
     padding: 32px 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .footer__logo-container {
     width: 14%;
-    height: 100%; 
+    height: 52px;
 }
-
 .footer__logo {
     max-height: 52px;
     filter: invert(100%);
 }
 
 .footer__second-part {
-    flex-grow: 1;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -28,4 +27,18 @@
 
 .footer__priv-policy {
     color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 0.7rem;
+    font-family: 'Roboto';
+}
+
+@media (max-width: 576px) { 
+    .footer__container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer__second-part {
+        flex-direction: column;
+    }
 }

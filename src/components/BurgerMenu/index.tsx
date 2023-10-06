@@ -1,6 +1,6 @@
 import "./index.scss";
 import Logo from "../Logo";
-import CrossSvg from "../../assets/CrossSvg";
+import CrossSvg from "../CrossIcon";
 import React from "react";
 import NavItem from "../NavItem";
 import VisitorsInfo from "../VisitorsInfo";
@@ -19,7 +19,7 @@ const BurgerMenu: React.FC<IBurgerMenu> = ({ isActive, onClick }) => {
             <div className={"menu__logo-container"}>
                 <Logo styles="menu__logo"></Logo>
             </div>
-          <CrossSvg setActive={onClick}></CrossSvg>
+          <CrossSvg setActive={onClick} styles={'menu__cross'}></CrossSvg>
         </div>
         <ul className={"menu__link-list"}>
           <li className={"menu__link-list-item"} onClick={() => onClick()}>

@@ -1,5 +1,4 @@
 .advantages-card {
-    width: 757px;
     display: flex;
     justify-content: space-between;
 }
@@ -32,5 +31,41 @@
 .advantages-card__description {
     font-family: 'Roboto';
     font-size: 0.75rem;
+}
 
+@media (max-width: 1140px) {
+    .advantages-card__img {
+        width: 243px;
+        height: 243px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .advantages-card__img {
+        width: 203px;
+        height: 203px;
+    }
+
+    .advantages-card__info {
+        max-width: 55%;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantages-card__img {
+        width: 153px;
+        height: 153px;
+    }
+}
+
+@media (max-width: 360px) {
+    .advantages-card__img {
+        width: 73px;
+        height: 73px;
+    }
+
+    .advantages-card__info {
+        max-width: 75%;
+    }
 }

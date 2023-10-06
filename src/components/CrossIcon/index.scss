@@ -1,15 +1,12 @@
-.svg {
+.cross {
     display: block;
     width: 15px;
     cursor: pointer;
-}
-
-.svg line {
-    stroke: #ffffff;
     stroke-width: 20;
+
 }
 
-.svg:hover line {
+.cross:hover {
     transition: 0.3s;
     stroke: red;
 }

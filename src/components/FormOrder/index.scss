@@ -1,0 +1,98 @@
+.order-form {
+    display: block;
+
+}
+
+.order-form__order-details{
+    margin-bottom: 20px;
+}
+
+.order-form__title {
+    margin-bottom: 24px;
+    font-family: 'Alegreya';
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.order-form__cart-list {
+    margin-bottom: 10px;
+}
+
+.order-form__cart-list-item {
+    padding: 8px 0 ;
+    border-top: 1px rgba(220, 223, 226, 1) solid;
+}
+
+.order-form__cart-list-item:last-child {
+    border-bottom: 1px rgba(220, 223, 226, 1) solid;
+}
+
+.order-form__total-cost {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.order-form__total-cost-title {
+    margin-right: 20px;
+    font-family: 'Alegreya';
+    font-weight: 700;
+}
+
+.order-form__total-cost-value {
+    font-family: 'Alegreya';
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.order-form__contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.order-form__user-contact-info {
+    margin-bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-form__contact-info-input {
+    padding: 8px;
+    height: 44px;
+    border: 1px solid rgba(196, 199, 202, 1);
+    border-radius: 2px;
+}
+
+.order-form__contact-info-tel-input {
+    width: 48%;
+}
+
+.order-form__contact-info-name-input {
+    width: 48%;
+}
+
+.order-form__payment-methods-title {
+    margin-bottom: 12px;
+    font-family: 'Alegreya';
+    font-weight: 700;
+}
+
+.order-form__payment-methods-item {
+    margin-bottom: 16px;
+}
+
+.order-form__payment-input {
+    margin-right: 8px;
+}
+
+.order-form__btn-container {
+    margin-bottom: 23px;
+}
+
+.order-form__privacy-policy {
+    font-family: 'Roboto';
+    font-size: 0.7rem;
+    color: rgba(132, 138, 154, 1);
+}
