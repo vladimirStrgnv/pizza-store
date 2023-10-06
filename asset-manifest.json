@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f6506882.css",
+    "main.js": "./static/js/main.26d81293.js",
+    "static/media/promo-pizza.png": "./static/media/promo-pizza.4a4afbaab0cf726095eb.png",
+    "static/media/inst6.png": "./static/media/inst6.e8fd3eabdee3afa86d18.png",
+    "static/media/inst2.png": "./static/media/inst2.f6df2f9996bc5327bc69.png",
+    "static/media/inst9.png": "./static/media/inst9.ff7da423481812cd2e68.png",
+    "static/media/inst7.png": "./static/media/inst7.fb86f75cd21744ecd909.png",
+    "static/media/inst1.png": "./static/media/inst1.0f9482de8e8c93ac0ddb.png",
+    "static/media/inst4.png": "./static/media/inst4.be129b90d09f292ff947.png",
+    "static/media/inst5.png": "./static/media/inst5.21428fb3ac34ec76c6dd.png",
+    "static/media/inst8.png": "./static/media/inst8.0a4740c0017e36496f82.png",
+    "static/media/inst10.png": "./static/media/inst10.0bebe441dcbc2e9fc709.png",
+    "static/media/inst3.png": "./static/media/inst3.448829b4fb585d4d7ec2.png",
+    "static/media/card1.png": "./static/media/card1.18def10aa94e96798b2e.png",
+    "static/media/0.png": "./static/media/0.0d472bbe379b4b0969b5.png",
+    "static/media/1.png": "./static/media/1.31760eb12a56fb407084.png",
+    "static/media/card2.png": "./static/media/card2.4f4cd045bd66a8174b34.png",
+    "static/media/card0.png": "./static/media/card0.229d2eb18647cdd3c2f0.png",
+    "static/media/2.png": "./static/media/2.644820112b15273bdee3.png",
+    "static/media/4.png": "./static/media/4.476297bdd93eddead8d2.png",
+    "static/media/8.png": "./static/media/8.639c22698673e836ea5e.png",
+    "static/media/10.png": "./static/media/10.6155f214e34ed136a804.png",
+    "static/media/11.png": "./static/media/11.2c71da0e5d940f4122c3.png",
+    "static/media/5.png": "./static/media/5.3867bac9983cda3d33d6.png",
+    "static/media/6.png": "./static/media/6.a4f463a2978de56919eb.png",
+    "static/media/7.png": "./static/media/7.2254b07fe27ae80fef0d.png",
+    "static/media/9.png": "./static/media/9.deea440c89a1561ff4b2.png",
+    "static/media/3.png": "./static/media/3.d81e7b073a302d9bbb69.png",
+    "static/media/Logo.svg": "./static/media/Logo.a943a6fa7e3ad4b09ace.svg",
+    "static/media/Cart.svg": "./static/media/Cart.96362b3cfd045007f0be.svg",
+    "index.html": "./index.html",
+    "main.f6506882.css.map": "./static/css/main.f6506882.css.map",
+    "main.26d81293.js.map": "./static/js/main.26d81293.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6506882.css",
+    "static/js/main.26d81293.js"
+  ]
+}
