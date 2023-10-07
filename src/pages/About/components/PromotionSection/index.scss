@@ -15,7 +15,7 @@
 
 .promotion__order-info-container {
     width: 45%;
-    margin-bottom: 277px;
+    margin-bottom: 21.5%;
 }
 
 .promotion__title {
@@ -24,6 +24,7 @@
     font-family: "Alegreya";
     letter-spacing: 1px;
     margin-bottom: 10px;
+    text-wrap: nowrap;
 }
 
 .promotion__description {
@@ -49,7 +50,9 @@
 .promotion__advertising-card-list { 
     display: flex;
     justify-content: space-between;
+    column-gap: 32px;
 }
+
 
 .promotion__carousel-wrapper {
     display: none;
@@ -62,25 +65,23 @@
     }
 
     .promotion__order-info-container {
-        margin-bottom: 120px;
-
+        margin-bottom: 15%;
     }
 }
 
 @media (max-width: 768px) {
     .promotion {
         position: relative;
-        padding: 0px 0 112px 0;
-    }
-
-    .promotion__order-info-container {
-        margin-bottom: 60px;
-
+        padding: 0px 0 80px 0;
     }
 
     .promotion__title {
         font-size: 4rem;
         margin-bottom: 5px;
+    }
+
+    .promotion__title {
+        text-wrap: wrap;
     }
 }
 
@@ -90,18 +91,21 @@
     }
 
     .promotion__pizza-img {
-        display: block;
-        position: absolute;
-        right: 0%;
-        top: -20px;
-        max-height: 630px;
-        transform: scale(1.1);
         max-width: 100%;
     }
 
     .promotion__order-info-container {
         width: 100%;
-        text-align: center;
+        text-align: left;
+    }
+
+    .promotion__title {
+        font-size: 4rem;  
+        letter-spacing: 0.1px;
+    }
+    
+    .promotion__description {
+        font-size: 1.2rem;
     }
 
     .promotion__advertising-card-list {
@@ -112,3 +116,9 @@
         display: block;
     }
 }
+
+@media (max-width: 380px) {
+    .promotion {
+        padding-top: 180px
+    }
+} 

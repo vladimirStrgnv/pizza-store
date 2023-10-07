@@ -4,7 +4,7 @@ import { useState } from "react";
 import FormOrder from "../FormOrder";
 
 const Cart = () => {
-  const [popUpOption, setPopUpOption] = useState(true);
+  const [popUpOption, setPopUpOption] = useState(false);
 
   const setPopUpActive = () => {
     setPopUpOption(!popUpOption);
@@ -19,7 +19,7 @@ const Cart = () => {
         }}
       >
         <div className="cart__img"></div>
-        <div className="cart__counter">3</div>
+        <div className="cart__counter"><span className="cart__counter-value">3</span></div>
       </div>
       <PopUp
         children={<FormOrder></FormOrder>}

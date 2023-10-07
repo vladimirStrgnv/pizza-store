@@ -31,3 +31,28 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 1024px) {
+
+    .pizza-assortment__title {
+        margin-bottom: 20px;
+    }
+    .pizza-assortment__filter-list {
+        margin-bottom: 50px;
+        max-width: 500px;
+    }
+
+    .pizza-assortment__list-item {
+        width: 30%;
+        flex: 1 0 30%; 
+    }
+
+} 
+
+@media (max-width: 768px) { 
+    .pizza-assortment__list-item {
+        width: auto;
+        flex: 1 0 45%; 
+    }
+}

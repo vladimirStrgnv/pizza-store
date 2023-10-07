@@ -46,7 +46,7 @@
     max-width: 264px;
     max-height: 36px;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: rgba(132, 138, 154, 1);
     font-family: 'Roboto';
     line-height: 18px;
@@ -112,12 +112,34 @@
     font-weight: 700;
 }
 
-.pizza-card__order-btn {
-    font-family: 'Alegreya';
-    font-weight: 700;
-    background-color: rgba(229, 45, 45, 1);
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    padding: 14px 69px;
-    border-radius: 5px;
+@media (max-width: 1024px) {
+    .pizza-card {
+        height: 490px;
+        max-width: 236px;
+    }
+
+    .pizza-card__img-container {
+        height: 196px;
+    }
+}
+
+
+@media (max-width:  380px) {
+    .pizza-card {
+        flex-direction: row;
+        height: 199px;
+        max-width: 288px;
+        padding:  10px 10px 24px;
+        align-items: flex-start;
+    }
+
+    .pizza-card__img-container {
+        height: 77px;
+        width: 77px;
+    }
+
+    .pizza-card__info {
+        max-width: 164px;
+    }
+
 }

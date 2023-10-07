@@ -1,5 +1,6 @@
 .gallery {
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .gallery__title {
@@ -21,7 +22,6 @@
 .gallery__images-list {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .gallery__images-list-item {
@@ -38,6 +38,7 @@
 }
 
 @media (max-width: 480px) {
+    
     .gallery__images-list-item {
         flex: 0 0 50%; 
     }

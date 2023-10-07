@@ -44,10 +44,6 @@ img {
 	vertical-align: top;
 }
 
-img, svg {
-	max-width: 100%;
-	height: auto;
-}
 
 address {
   font-style: normal;
@@ -102,10 +98,18 @@ body {
 }
 
 a { color: inherit; } 
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
 
 .container {
     max-width: 1320px;
-    width: 90%;
+    width: 92%;
     margin: 0 auto;
 }
 
@@ -117,7 +121,13 @@ a { color: inherit; }
 
 @media (max-width: 768px) {
     html {
-        font-size: 13px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 10px;
     }
 }
 

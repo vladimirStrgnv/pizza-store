@@ -1,6 +1,7 @@
 import "./index.scss";
 import { useState } from "react";
 import PizzaImageCard from "../../../../components/PizzaImageCard";
+import Button from "../../../../components/Button";
 
 const PizzaOrderCard = ({
   imgIndex,
@@ -59,7 +60,7 @@ const PizzaOrderCard = ({
             ></div>
           </div>
           <h3 className="pizza-card__min-cost">От {cost} руб.</h3>
-          <button className="pizza-card__order-btn">Заказать</button>
+          <Button text='Заказать'></Button>
         </div>
       </div>
     </div>
