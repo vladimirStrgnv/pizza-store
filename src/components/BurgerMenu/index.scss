@@ -7,124 +7,128 @@
     z-index: 1000;
     transform: translateX(200%);
     transition: all 0.3s;
-}
 
-.menu__content {
-    padding: 20px;
-    right: 0%;
-    position: absolute;
-    width: 320px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(49, 57, 69, 1);
-    transition: all 0.4s;
-    border-right: 1px solid rgba(0, 0, 0, 0.144);
-    color: #ffffff;
-}
+    &__content {
+        padding: 20px;
+        right: 0%;
+        position: absolute;
+        width: 320px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(49, 57, 69, 1);
+        transition: all 0.4s;
+        border-right: 1px solid rgba(0, 0, 0, 0.144);
+        color: #ffffff;
+    }
 
-.menu__header {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-    font-size: 2rem;
-}
+    &__header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
 
-.menu__logo-container {
-    width: 80px;
-    height: 39px;
-}
+    &__logo-container {
+        width: 80px;
+        height: 39px;
+    }
 
-.menu__logo {
-    display: none;
-    filter: invert(100%);
-}
+    &__logo {
+        display: none;
+        filter: invert(100%);
+    }
 
-.menu__blur {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-}
+    &__blur {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
 
-.menu__link-list  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
+    &__link-list  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 
-.menu__link-list-item {
-    width: 50%;
-    padding: 24px 0;
-    text-align: center;
-    border-bottom: 1px rgba(29, 34, 40, 1) solid;
-}
+    &__link-list-item {
+        width: 50%;
+        padding: 24px 0;
+        text-align: center;
+        border-bottom: 1px rgba(29, 34, 40, 1) solid;
+    }
 
-.menu__link-list-item:last-child {
-    border-bottom: none;
-}
+    &__link-list-item:last-child {
+        border-bottom: none;
+    }
 
-.menu__link{
-    font-size: 1.3rem;
-    font-family: "Gilroy-Heavy";
-    text-transform: uppercase;
-    transition: 0.3s;
-}
+    &__link{
+        font-size: 1.3rem;
+        font-family: "Gilroy-Heavy";
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
 
-.menu__link:hover {
-    color: #c5c0b3;;
-}
+    &__link:hover {
+        color: #c5c0b3;;
+    }
 
-.menu.active {
-    transform: translateX(0%);
-}
+    &.active {
+        transform: translateX(0%);
+    }
 
-.menu__link__active {
-    color: #FFC53D;;
+    &__link__active {
+        color: #FFC53D;;
+    }
 
-}
+    &__footer {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-.menu__footer {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
+    &__tel-order-title {
+        color:  rgba(168, 176, 188, 1);
+        font-family: 'Roboto';
+        font-weight: 700;
+    }
 
-.menu__tel-order-title {
-    color:  rgba(168, 176, 188, 1);
-    font-family: 'Roboto';
-    font-weight: 700;
-}
+    &__switch-lang-btn {
+        display: none;
+        margin-top: 40px;
+        font-family: 'Alegreya';
+    }
 
-.menu__switch-lang-btn {
-    display: none;
-    margin-top: 40px;
-    font-family: 'Alegreya';
-}
-
-.menu__cross {
-    stroke: rgb(255, 255, 255);
+    &__cross {
+        stroke: rgb(255, 255, 255);
+    }
 }
 
 @media (max-width: 480px) {
     
-    .menu__content {
-        padding: 20px;
-        right: 0%;
-        position: absolute;
-        width: 80%;
-    }
-    .menu__logo {
-        display: block;
-        filter: invert(100%);
-    }
+    .menu {
 
-    .menu__switch-lang-btn {
-        display: block;
+        &__content {
+            padding: 20px;
+            right: 0%;
+            position: absolute;
+            width: 100%;
+        }
+
+        &__logo {
+            display: block;
+            filter: invert(100%);
+        }
+
+        &__switch-lang-btn {
+            display: block;
+        }
     }
 }
+

@@ -30,7 +30,7 @@
 
 .advantages-card__description {
     font-family: 'Roboto';
-    font-size: 0.75rem;
+    font-size: 0.85rem;
 }
 
 @media (max-width: 1140px) {
@@ -59,13 +59,24 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 380px) {
+    .advantages-card--reverse {
+        flex-direction: row;
+    }
+
+    .advantages-card__img-container {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+
+    }
+
     .advantages-card__img {
-        width: 73px;
-        height: 73px;
+        height: 100%;
+        width: 100%;
     }
 
     .advantages-card__info {
-        max-width: 75%;
+        max-width: 70%;
     }
 }

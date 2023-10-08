@@ -1,5 +1,5 @@
 import "./index.scss";
-import {useState} from "react";
+import { useState, useEffect } from "react";
 import Logo from "../Logo";
 import Nav from "../Nav";
 import VisitorsInfo from "../VisitorsInfo";
@@ -11,40 +11,55 @@ import BurgerMenu from "../BurgerMenu";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
+  const [isScroll, setScrollStatus] = useState(false);
 
   const toggleMenuActive = () => {
     setMenuActive(!menuActive);
   };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 15) {
+        setScrollStatus(true);
+      } else {
+        setScrollStatus(false);
+      }
+    });
+  }, []);
 
   return (
-    <header className="container header">
-      <div className="header__container-logo">
-        <Logo></Logo>
-      </div>
-      <div className="header__nav-container">
-        <Nav></Nav>
-      </div>
-      <div className="header__list-options-container">
-        <div className="header__list-options-container-first-item">
-          <div className="header__visitors-info-container">
-            <div className="header__tel-img"></div>
-            <div className="header__visitors-info-wrapper">
-              <VisitorsInfo></VisitorsInfo>
+    <header className={`header ${isScroll?"header__sticky": ''}`}>
+      <div className="container header__container">
+        <div className={`header__container-logo ${isScroll?"header__container-logo-sticky": ''}`}>
+          <Logo></Logo>
+        </div>
+        <div className="header__nav-container">
+          <Nav></Nav>
+        </div>
+        <div className="header__list-options-container">
+          <div className="header__list-options-container-first-item">
+            <div className="header__visitors-info-container">
+              <div className="header__tel-img"></div>
+              <div className="header__visitors-info-wrapper">
+                <VisitorsInfo></VisitorsInfo>
+              </div>
+            </div>
+            <div className="header__order-info-container">
+              <Cart></Cart>
+              <div className="header__order-info-wrapper">
+                <OrderInfo></OrderInfo>
+              </div>
             </div>
           </div>
-          <div className="header__order-info-container">
-            <Cart></Cart>
-            <div className="header__order-info-wrapper">
-              <OrderInfo></OrderInfo>
-            </div>
+          <div className="header__list-options-container-second-item">
+            <ToggleLangBtn></ToggleLangBtn>
+            <BurgerIcon onClick={toggleMenuActive}></BurgerIcon>
           </div>
         </div>
-        <div className="header__list-options-container-second-item">
-          <ToggleLangBtn></ToggleLangBtn>
-          <BurgerIcon onClick={toggleMenuActive}></BurgerIcon>
-        </div>
+        <BurgerMenu
+          isActive={menuActive}
+          onClick={toggleMenuActive}
+        ></BurgerMenu>
       </div>
-      <BurgerMenu isActive={menuActive} onClick={toggleMenuActive}></BurgerMenu>
     </header>
   );
 };

@@ -2,6 +2,7 @@ import "./index.scss";
 import { promoCardsData } from "../../consts";
 import PromotionCard from "../PromotionCard";
 import PromotionCarousel from "../PromotionCarousel";
+import Button from "../../../../components/Button";
 
 
 const PromotionSection = () => {
@@ -12,7 +13,7 @@ const PromotionSection = () => {
         <p className="promotion__description">
           Бесплатная и быстрая доставка за час в любое удобное для вас время
         </p>
-        <button className="promotion__choose-pizza-btn">Выбрать пиццу</button>
+        <Button text={'ВЫБРАТЬ ПИЦЦУ'}></Button>
       </div>
       <img
         className="promotion__pizza-img"

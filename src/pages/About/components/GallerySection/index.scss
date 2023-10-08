@@ -37,8 +37,17 @@
     }
 }
 
+@media (max-width: 1040px) {
+    .gallery__title {
+        margin-bottom: 10px;
+    }
+
+    .gallery__inst-link {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 480px) {
-    
     .gallery__images-list-item {
         flex: 0 0 50%; 
     }

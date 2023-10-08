@@ -1,16 +1,36 @@
 .header {
+    top: 0;
+    position: fixed;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s;
+}
+
+.header.header__sticky {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 2px 0 rgba(165, 169, 176, 0.3);
+}
+
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 46px;
-    padding-bottom: 46px;
 }
 
 .header__container-logo {
     width: 15%;
-    height: 80px;
-    min-width: auto;
     min-width: 80px;
+    height: 83px;
+}
+
+.header__container-logo.header__container-logo-sticky {
+    transition: 0.5s;
+    height: 31px;
 }
 
 .header__nav-container {

@@ -31,14 +31,14 @@ const CartItem = ({
           <button className="cart-item__counts-controller-btn">-</button>
           <input
             type="number"
-            value="1"
+            defaultValue="1"
             className="cart-item__counts-controller-input"
           />
           <button className="cart-item__counts-controller-btn">+</button>
         </div>
         <div className="cart-item__cost-info">{cost}руб</div>
       </div>
-      <CrossSvg setActive={() => {}} styles="cart-item__cross"></CrossSvg>
+      <CrossSvg setActive={() => {console.log(1)}} styles="cart-item__cross"></CrossSvg>
     </div>
   );
 };

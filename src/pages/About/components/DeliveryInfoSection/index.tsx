@@ -9,7 +9,7 @@ const DeliveryInfoSection = () => {
         <h2 className="delivery-info__title">Доставка и оплата</h2>
         <ul className="delivery-info__stage-list">
           {deliveryStagesData.map((stageData, index) => (
-            <li className='delivery-info__stage-list-item'>
+            <li className='delivery-info__stage-list-item' key={index}>
               <DeliveryStageCard
                 key={index}
                 imgIndex={index}

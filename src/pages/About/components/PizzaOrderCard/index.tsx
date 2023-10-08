@@ -60,7 +60,12 @@ const PizzaOrderCard = ({
             ></div>
           </div>
           <h3 className="pizza-card__min-cost">От {cost} руб.</h3>
-          <Button text='Заказать'></Button>
+          <div className="pizza-card__btn-container">
+            <Button text='Заказать'></Button>
+          </div> 
+          <div className="pizza-card__mobile-btn-container">
+            <Button text={`от ${cost} руб.`}></Button>
+          </div> 
         </div>
       </div>
     </div>

@@ -25,7 +25,28 @@
 }
 
 .pizza-filter:hover .pizza-filter__img {
-    bottom: 30px;
+    bottom: 20px;
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 380px) {
+    .pizza-filter {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pizza-filter__btn  {
+        display: none;
+    }
+
+    .pizza-filter__img {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+    }
 }

@@ -24,7 +24,8 @@
 }
 
 .pizza-card__img-container {
-    height: 212px;
+    max-height: 212px;
+    height: 100%;
 }
 
 .pizza-card__info {
@@ -43,8 +44,6 @@
 }
 
 .pizza-card__composition {
-    max-width: 264px;
-    max-height: 36px;
     text-align: center;
     font-size: 0.9rem;
     color: rgba(132, 138, 154, 1);
@@ -53,6 +52,7 @@
 }
 
 .pizza-card__order-params-info {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,16 +68,19 @@
 .pizza-card__size-variants {
     position: relative;
     display: flex;
+    justify-content: space-between;
     max-width: 182px;
+    width: 100%;
     background-color: rgba(239, 240, 241, 1);
     border: 1px solid rgba(239, 240, 241, 1);
 }
 
 .pizza-card__choose-variant-btn {
+    width: 33%;
+    flex: 0 0 33%; 
     position: relative;
-    width: 58px;
     height: 28px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: rgba(130, 144, 159, 1);
     font-family: 'Roboto';
     font-weight: 700;
@@ -86,7 +89,7 @@
 
 .pizza-card__size-slider {
     position: absolute;
-    width: 57px;
+    width: 33%;
     height: 28px;
     background-color: rgba(255, 255, 255, 1);
     transition: 0.4s;
@@ -112,34 +115,92 @@
     font-weight: 700;
 }
 
+.pizza-card__btn-container {
+    width: 100%;
+}
+
+.pizza-card__mobile-btn-container {
+    display: none;
+    width: 100%;
+}
+
 @media (max-width: 1024px) {
-    .pizza-card {
-        height: 490px;
-        max-width: 236px;
+    .pizza-card { 
+        height: 491px;
     }
 
     .pizza-card__img-container {
         height: 196px;
+        width: 196px;
     }
 }
 
 
 @media (max-width:  380px) {
+    .pizza-card__type {
+        height: 12px;
+        width: 12px;
+        top: 4px;
+        left: 4px;
+    }
+
     .pizza-card {
         flex-direction: row;
-        height: 199px;
+        height: 200px;
         max-width: 288px;
         padding:  10px 10px 24px;
         align-items: flex-start;
+
     }
 
     .pizza-card__img-container {
+        margin-right: 5px;
         height: 77px;
         width: 77px;
+        min-width: 77px;
     }
 
     .pizza-card__info {
         max-width: 164px;
+        align-items: flex-start;
+        padding-right: 5px;
     }
 
+    .pizza-card__composition {
+        text-align: left;
+    }
+
+    .pizza-card__order-params-info {
+        align-items: flex-start;
+
+    }
+
+    .pizza-card__min-cost {
+        display: none;
+    }
+
+    .pizza-card__btn-container {
+        max-width: 120px;
+    }
+
+    .pizza-card__btn-container {
+        display: none;
+    }
+
+    .pizza-card__mobile-btn-container {
+        display: block;
+    }
+
+
+}
+
+@media (max-width:  280px) {
+    .pizza-card {
+        flex-direction: row;
+        height: auto;
+        max-width: 288px;
+        padding:  10px 10px 24px;
+        align-items: flex-start;
+
+    }
 }

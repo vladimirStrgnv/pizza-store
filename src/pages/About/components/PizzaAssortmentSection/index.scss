@@ -32,20 +32,22 @@
     justify-content: center;
 }
 
+@media (max-width: 1140px) {
+    .pizza-assortment__list-item {
+        flex: 1 0 27%; 
+    }
+}
+
 
 @media (max-width: 1024px) {
 
     .pizza-assortment__title {
         margin-bottom: 20px;
     }
+
     .pizza-assortment__filter-list {
         margin-bottom: 50px;
         max-width: 500px;
-    }
-
-    .pizza-assortment__list-item {
-        width: 30%;
-        flex: 1 0 30%; 
     }
 
 } 
@@ -54,5 +56,20 @@
     .pizza-assortment__list-item {
         width: auto;
         flex: 1 0 45%; 
+    }
+}
+
+@media (max-width: 380px) { 
+    .pizza-assortment__filter-list {
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    .pizza-assortment__filter-list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        flex-grow: 1;
     }
 }
