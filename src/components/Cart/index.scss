@@ -1,0 +1,24 @@
+.cart {
+    position: relative;
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        background: no-repeat url('../../assets/Cart.svg');
+    }
+
+    &__counter {
+        top: -10px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: red;
+    
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

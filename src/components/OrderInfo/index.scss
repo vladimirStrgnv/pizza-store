@@ -1,0 +1,22 @@
+.order-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+
+    &__title {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: 'Alegreya';
+        font-weight: 900;
+        white-space: nowrap; 
+    }
+
+    &__order-description {
+        color: rgba(132, 138, 154, 1);
+        font-size: 0.70rem;
+        font-family: 'Roboto';
+        white-space: nowrap; 
+    }
+}

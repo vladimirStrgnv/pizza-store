@@ -1,0 +1,39 @@
+.delivery-info {
+    padding: 24px 0 60px;
+    background-color: rgba(248, 246, 243, 1);
+
+    &__title {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Alegreya';
+        font-weight: 700;
+    }
+    
+    &__stage-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__stage-list-item {
+        flex: 0 0 31%; 
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .delivery-info {
+        
+        &__stage-list {
+        flex-direction: column;
+        justify-content: space-between;
+        }
+
+        &__stage-list-item {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    }
+}

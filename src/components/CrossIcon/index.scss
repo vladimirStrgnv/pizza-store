@@ -1,0 +1,12 @@
+.cross {
+    display: block;
+    width: 15px;
+    cursor: pointer;
+    stroke-width: 20;
+
+    &:hover {
+        transition: 0.3s;
+        stroke: red;
+    }
+
+}

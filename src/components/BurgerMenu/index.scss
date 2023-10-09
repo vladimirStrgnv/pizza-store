@@ -1,0 +1,136 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateX(200%);
+    transition: all 0.3s;
+
+    &__content {
+        padding: 20px;
+        right: 0%;
+        position: absolute;
+        width: 320px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(49, 57, 69, 1);
+        transition: all 0.4s;
+        border-right: 1px solid rgba(0, 0, 0, 0.144);
+        color: #ffffff;
+        z-index: 1000;
+
+    }
+
+    &__header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+    }
+
+    &__logo-container {
+        width: 80px;
+        height: 39px;
+    }
+
+    &__logo {
+        display: none;
+        filter: invert(100%);
+    }
+
+    &__blur {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+    }
+
+    &__link-list  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__link-list-item {
+        width: 50%;
+        padding: 24px 0;
+        text-align: center;
+        border-bottom: 1px rgba(29, 34, 40, 1) solid;
+    }
+
+    &__link-list-item:last-child {
+        border-bottom: none;
+    }
+
+    &__link{
+        font-size: 1.3rem;
+        font-family: "Gilroy-Heavy";
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+
+    &__link:hover {
+        color: #c5c0b3;;
+    }
+
+    &.active {
+        transform: translateX(0%);
+    }
+
+    &__link__active {
+        color: #FFC53D;;
+    }
+
+    &__footer {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__tel-order-title {
+        color:  rgba(168, 176, 188, 1);
+        font-family: 'Roboto';
+        font-weight: 700;
+    }
+
+    &__switch-lang-btn {
+        display: none;
+        margin-top: 40px;
+        font-family: 'Alegreya';
+    }
+
+    &__cross {
+        stroke: rgb(255, 255, 255);
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .menu {
+
+        &__content {
+            padding: 20px;
+            right: 0%;
+            position: absolute;
+            width: 100%;
+        }
+
+        &__logo {
+            display: block;
+            filter: invert(100%);
+        }
+
+        &__switch-lang-btn {
+            display: block;
+        }
+    }
+}
+

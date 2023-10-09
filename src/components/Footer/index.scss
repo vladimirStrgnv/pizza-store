@@ -1,0 +1,48 @@
+.footer {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 1);
+
+    &__container {
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo-container {
+        width: 14%;
+        height: 52px;
+    }
+
+    &__logo {
+        max-height: 52px;
+        filter: invert(100%);
+    }
+
+    &__second-part {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__priv-policy {
+        color: rgb(255, 255, 255);
+        font-weight: 100;
+        font-size: 0.7rem;
+        font-family: 'Roboto';
+    }
+}
+
+@media (max-width: 576px) { 
+    .footer {
+        
+        &__container {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__second-part {
+            flex-direction: column;
+        }
+    }
+}

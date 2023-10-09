@@ -1,0 +1,41 @@
+.container {
+    max-width: 1320px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 18px;
+}
+
+
+body {
+    padding-top: 180px;
+    overflow-x: hidden;
+    --scrollbar-width: calc(100vw - 100%);
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 13px;
+    }
+
+    body {
+        padding-top: 140px;
+        overflow-x: hidden;
+        --scrollbar-width: calc(100vw - 100%);
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 10px;
+    }
+}
+

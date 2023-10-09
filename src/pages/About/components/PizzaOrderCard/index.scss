@@ -1,0 +1,218 @@
+.pizza-card {
+    position: relative;
+    height: 540px;
+    max-width: 304px;
+    padding:  20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.2); 
+
+
+    &__type {
+        top: 12px;
+        left: 12px;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &:hover .pizza-card__type {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__img-container {
+        max-height: 212px;
+        height: 100%;
+    }
+    
+    &__info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__title {
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: 'Alegreya';
+        font-weight: 700;
+        transition: 0.4s;
+
+    }
+
+    &:hover  &__title{
+        color: rgba(229, 45, 45, 1);
+    }
+    
+    &__composition {
+        text-align: center;
+        font-size: 0.9rem;
+        color: rgba(132, 138, 154, 1);
+        font-family: 'Roboto';
+        line-height: 18px;
+    }
+    
+    &__order-params-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    
+    &__size-title {
+        font-size: 0.7rem;
+        font-family: 'Roboto';
+    
+    }
+    
+    &__size-variants {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        max-width: 182px;
+        width: 100%;
+        background-color: rgba(239, 240, 241, 1);
+        border: 1px solid rgba(239, 240, 241, 1);
+    }
+    
+    &__choose-variant-btn {
+        width: 33%;
+        flex: 0 0 33%; 
+        position: relative;
+        height: 28px;
+        font-size: 0.8rem;
+        color: rgba(130, 144, 159, 1);
+        font-family: 'Roboto';
+        font-weight: 700;
+        z-index: 10;
+
+        &--choosen {
+            color: rgb(0, 0, 0);
+        }
+    }
+    
+    &__size-slider {
+        position: absolute;
+        width: 33%;
+        height: 28px;
+        background-color: rgba(255, 255, 255, 1);
+        transition: 0.4s;
+    }
+    
+    &__size-slider--small{
+        left: 0%;
+    }
+    
+    &__size-slider--medium {
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0%) 
+    }
+    
+    &__size-slider--big{
+        left: 100%;
+        transform: translate(-100%, 0%) }
+    
+    &__min-cost {
+        font-size: 1.3rem;
+        font-family: 'Roboto';
+        font-weight: 700;
+    }
+    
+    &__btn-container {
+        width: 100%;
+    }
+    
+    &__mobile-btn-container {
+        display: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pizza-card { 
+        height: 491px;
+
+        &__img-container {
+            height: 196px;
+            width: 196px;
+        }
+    }
+}
+
+@media (max-width:  380px) {
+
+    .pizza-card {
+        flex-direction: row;
+        height: 200px;
+        max-width: 288px;
+        padding:  10px 10px 24px;
+        align-items: flex-start;
+
+        
+    &__type {
+        height: 12px;
+        width: 12px;
+        top: 4px;
+        left: 4px;
+    }
+
+    &__img-container {
+        margin-right: 5px;
+        height: 77px;
+        width: 77px;
+        min-width: 77px;
+    }
+
+    &__info {
+        max-width: 164px;
+        align-items: flex-start;
+        padding-right: 5px;
+    }
+
+    &__composition {
+        text-align: left;
+    }
+
+    &__order-params-info {
+        align-items: flex-start;
+
+    }
+
+    &__min-cost {
+        display: none;
+    }
+
+    &__btn-container {
+        max-width: 120px;
+    }
+
+    &__btn-container {
+        display: none;
+    }
+
+    &__mobile-btn-container {
+        display: block;
+    }
+
+    }
+
+}
+
+@media (max-width:  280px) {
+    .pizza-card {
+        flex-direction: row;
+        height: auto;
+        max-width: 288px;
+        padding:  10px 10px 24px;
+        align-items: flex-start;
+
+    }
+}
