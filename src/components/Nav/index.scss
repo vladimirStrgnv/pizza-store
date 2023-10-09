@@ -1,8 +1,8 @@
 .nav {
     width: 100%;
-}
 
-.nav__link-list {
-    display: flex;
-    justify-content: space-between;
+    &__link-list {
+        display: flex;
+        justify-content: space-between;
+    }
 }

@@ -1,75 +1,81 @@
 .pizza-assortment {
     padding-bottom: 110px;
+
+    &__title {
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Alegreya';
+        font-weight: 700;
+    }
+
+    &__filter-list {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        max-width: 560px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 38px;
+        column-gap: 32px;
+    }
+
+    &__list-item {
+        flex: 1 0 21%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.pizza-assortment__title {
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Alegreya';
-    font-weight: 700;
-}
 
-.pizza-assortment__filter-list {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    max-width: 560px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pizza-assortment__list {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 38px;
-    column-gap: 32px;
-}
-
-.pizza-assortment__list-item {
-    flex: 1 0 21%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 @media (max-width: 1140px) {
     .pizza-assortment__list-item {
-        flex: 1 0 27%; 
+        flex: 1 0 27%;
     }
 }
 
 
 @media (max-width: 1024px) {
+    .pizza-assortment {
 
-    .pizza-assortment__title {
-        margin-bottom: 20px;
-    }
+        &__title {
+            margin-bottom: 20px;
+        }
 
-    .pizza-assortment__filter-list {
-        margin-bottom: 50px;
-        max-width: 500px;
-    }
-
-} 
-
-@media (max-width: 768px) { 
-    .pizza-assortment__list-item {
-        width: auto;
-        flex: 1 0 45%; 
+        &__filter-list {
+            margin-bottom: 50px;
+            max-width: 500px;
+        }
     }
 }
 
-@media (max-width: 380px) { 
-    .pizza-assortment__filter-list {
-        margin-bottom: 20px;
-        align-items: center;
+@media (max-width: 768px) {
+    .pizza-assortment__list-item {
+        width: auto;
+        flex: 1 0 45%;
     }
-    
-    .pizza-assortment__filter-list-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 20%;
-        flex-grow: 1;
+}
+
+@media (max-width: 380px) {
+    .pizza-assortment {
+
+        &__filter-list {
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        &__filter-list-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20%;
+            flex-grow: 1;
+        }
     }
 }

@@ -27,9 +27,9 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`header ${isScroll?"header__sticky": ''}`}>
+    <header className={`header ${isScroll?"header--sticky": ''}`}>
       <div className="container header__container">
-        <div className={`header__container-logo ${isScroll?"header__container-logo-sticky": ''}`}>
+        <div className={`header__container-logo ${isScroll?"header__container-logo--sticky": ''}`}>
           <Logo></Logo>
         </div>
         <div className="header__nav-container">

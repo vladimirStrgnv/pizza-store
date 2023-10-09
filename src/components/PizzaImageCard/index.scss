@@ -2,47 +2,48 @@
     position: relative;
     margin-bottom: 10px;
     height: 100%;
-}
 
-.pizza-image-card__big-size-outline {
-    top: 0;
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 2px rgba(220, 223, 226, 1) dashed;
-}
+    &__big-size-outline {
+        top: 0;
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px rgba(220, 223, 226, 1) dashed;
+    }
 
-.pizza-image-card__medium-size-outline {
-    top: 8%;
-    left: 8%;
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 2px rgba(220, 223, 226, 1) dashed;
-}
+    &__medium-size-outline {
+        top: 8%;
+        left: 8%;
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px rgba(220, 223, 226, 1) dashed;
+    }
 
-.pizza-image-card__img {
-    transition: 0.5s;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: block;
-    background-position: center;
-    z-index: 10;
-}
+    &__img {
+        transition: 0.5s;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: block;
+        background-position: center;
+        z-index: 10;
 
-.pizza-image-card__img--big {
-    transform: scale(1.1);
+        &--big {
+            transform: scale(1.1);
+        }
+    
+        &--medium {
+            transform: scale(0.9);
+        }
+    
+        &--small {
+            transform: scale(0.75);
+        }
+    }
 
-}
-.pizza-image-card__img--medium {
-    transform: scale(0.9);
-}
-
-.pizza-image-card__img--small {
-    transform: scale(0.75);
 }

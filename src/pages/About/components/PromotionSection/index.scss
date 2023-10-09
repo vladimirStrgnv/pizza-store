@@ -1,60 +1,62 @@
 .promotion {
     position: relative;
     padding: 150px 0 112px 0;
+
+    &__pizza-img {
+        display: block;
+        position: absolute;
+        right: -19%;
+        top: -20px;
+        max-height: 630px;
+        transform: scale(1.1);
+        max-width: 70%;
+    }
+    
+    &__order-info-container {
+        width: 45%;
+        margin-bottom: 21.5%;
+    }
+    
+    &__title {
+        font-size: 4rem;
+        font-weight: 700;
+        font-family: "Alegreya";
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-wrap: nowrap;
+    }
+    
+    &__description {
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+        font-family: "Roboto";
+        max-width: 450px;
+        line-height: 36px;
+    }
+    
+    
+    &__advertising-card-list { 
+        display: flex;
+        justify-content: space-between;
+        column-gap: 32px;
+    }
+    
+    
+    &__carousel-wrapper {
+        display: none;
+    }
 }
 
-.promotion__pizza-img {
-    display: block;
-    position: absolute;
-    right: -19%;
-    top: -20px;
-    max-height: 630px;
-    transform: scale(1.1);
-    max-width: 70%;
-}
 
-.promotion__order-info-container {
-    width: 45%;
-    margin-bottom: 21.5%;
-}
-
-.promotion__title {
-    font-size: 4rem;
-    font-weight: 700;
-    font-family: "Alegreya";
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    text-wrap: nowrap;
-}
-
-.promotion__description {
-    margin-bottom: 30px;
-    font-size: 1.3rem;
-    font-family: "Roboto";
-    max-width: 450px;
-    line-height: 36px;
-}
-
-
-.promotion__advertising-card-list { 
-    display: flex;
-    justify-content: space-between;
-    column-gap: 32px;
-}
-
-
-.promotion__carousel-wrapper {
-    display: none;
-}
 
 @media (max-width: 1140px) {
     .promotion {
         position: relative;
         padding: 40px 0 112px 0;
-    }
 
-    .promotion__order-info-container {
-        margin-bottom: 15%;
+        &__order-info-container {
+            margin-bottom: 15%;
+        }
     }
 }
 
@@ -62,47 +64,45 @@
     .promotion {
         position: relative;
         padding: 0px 0 80px 0;
+
+        &__title {
+            font-size: 4rem;
+            margin-bottom: 5px;
+            text-wrap: wrap;
+        }
     }
 
-    .promotion__title {
-        font-size: 4rem;
-        margin-bottom: 5px;
-    }
-
-    .promotion__title {
-        text-wrap: wrap;
-    }
 }
 
 @media (max-width: 480px) {
     .promotion {
-        padding-top: 240px
-    }
+        padding-top: 240px;
 
-    .promotion__pizza-img {
-        max-width: 100%;
-    }
-
-    .promotion__order-info-container {
-        width: 100%;
-        text-align: left;
-    }
-
-    .promotion__title {
-        font-size: 4rem;  
-        letter-spacing: 0.1px;
-    }
+        &__pizza-img {
+            max-width: 100%;
+        }
     
-    .promotion__description {
-        font-size: 1.2rem;
-    }
-
-    .promotion__advertising-card-list {
-        display: none;
-    }
-
-    .promotion__carousel-wrapper {
-        display: block;
+        &__order-info-container {
+            width: 100%;
+            text-align: left;
+        }
+    
+        &__title {
+            font-size: 4rem;  
+            letter-spacing: 0.1px;
+        }
+        
+        &__description {
+            font-size: 1.2rem;
+        }
+    
+        &__advertising-card-list {
+            display: none;
+        }
+    
+        &__carousel-wrapper {
+            display: block;
+        }
     }
 }
 

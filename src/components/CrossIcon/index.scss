@@ -4,9 +4,9 @@
     cursor: pointer;
     stroke-width: 20;
 
-}
+    &:hover {
+        transition: 0.3s;
+        stroke: red;
+    }
 
-.cross:hover {
-    transition: 0.3s;
-    stroke: red;
 }

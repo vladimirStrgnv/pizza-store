@@ -1,19 +1,20 @@
-.promotion-card__img {
-    width: 100%;
-    max-height: 247px;
-    margin-bottom: 12px;
-    display: flex;
+.promotion-card {
+    &__img {
+        width: 100%;
+        max-height: 247px;
+        margin-bottom: 12px;
+        display: flex;
+    }
 
-}
+    &__title {
+        margin-bottom: 14px;
+        font-size:  1.35rem;
+        font-family: 'Alegreya';
+        font-weight: 700;
+    }
 
-.promotion-card__title {
-    margin-bottom: 14px;
-    font-size:  1.35rem;
-    font-family: 'Alegreya';
-    font-weight: 700;
-}
-
-.promotion-card__description {
-    font-size: 0.7rem;
-    font-family: 'Roboto';
+    &__description {
+        font-size: 0.7rem;
+        font-family: 'Roboto';
+    }
 }

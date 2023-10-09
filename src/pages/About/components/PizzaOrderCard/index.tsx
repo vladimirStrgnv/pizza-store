@@ -14,7 +14,6 @@ const PizzaOrderCard = ({
   const [size, setSize] = useState(sizeType);
   return (
     <div className="pizza-card">
-
       <img
         src={require(`../../assets/pizza-type/${type}.png`)}
         className="pizza-card__type"
@@ -32,7 +31,11 @@ const PizzaOrderCard = ({
           <h3 className="pizza-card__size-title">Размер, см</h3>
           <div className="pizza-card__size-variants">
             <button
-              className="pizza-card__choose-variant-btn"
+              className={`pizza-card__choose-variant-btn ${
+                size === "small"
+                  ? "pizza-card__choose-variant-btn--choosen"
+                  : ""
+              }`}
               onClick={() => {
                 setSize("small");
               }}
@@ -40,7 +43,11 @@ const PizzaOrderCard = ({
               20
             </button>
             <button
-              className="pizza-card__choose-variant-btn"
+              className={`pizza-card__choose-variant-btn ${
+                size === "medium"
+                  ? "pizza-card__choose-variant-btn--choosen"
+                  : ""
+              }`}
               onClick={() => {
                 setSize("medium");
               }}
@@ -48,7 +55,9 @@ const PizzaOrderCard = ({
               30
             </button>
             <button
-              className="pizza-card__choose-variant-btn"
+              className={`pizza-card__choose-variant-btn ${
+                size === "big" ? "pizza-card__choose-variant-btn--choosen" : ""
+              }`}
               onClick={() => {
                 setSize("big");
               }}
@@ -61,11 +70,11 @@ const PizzaOrderCard = ({
           </div>
           <h3 className="pizza-card__min-cost">От {cost} руб.</h3>
           <div className="pizza-card__btn-container">
-            <Button text='Заказать'></Button>
-          </div> 
+            <Button text="Заказать"></Button>
+          </div>
           <div className="pizza-card__mobile-btn-container">
             <Button text={`от ${cost} руб.`}></Button>
-          </div> 
+          </div>
         </div>
       </div>
     </div>

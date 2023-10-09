@@ -48,25 +48,37 @@ const FormOrder = () => {
 
       <fieldset className="order-form__contact-info">
         <div className="order-form__user-contact-info">
-          <input
-            type="text"
-            placeholder="Ваше имя"
-            className="order-form__contact-info-input order-form__contact-info-name-input"
-            required
-          />
+          <div className="order-form__user-contact-info-input-wrap order-form__user-contact-info-input-wrap-name">
+            <input
+              type="text"
+              className="order-form__user-contact-info-input"
+              required
+            />
+            <label className="order-form__user-contact-info-input-placeholder">
+              Ваше имя
+            </label>
+          </div>
+          <div className="order-form__user-contact-info-input-wrap order-form__user-contact-info-input-wrap-tel">
+            <input
+              type="tel"
+              className="order-form__user-contact-info-input"
+              required
+            />
+            <label className="order-form__user-contact-info-input-placeholder">
+              Телефон
+            </label>
+          </div>
+        </div>
+        <div className="order-form__user-contact-info-input-wrap">
           <input
             type="tel"
-            placeholder="Телефон"
-            className="order-form__contact-info-input order-form__contact-info-tel-input"
+            className="order-form__user-contact-info-input"
             required
           />
+          <label className="order-form__user-contact-info-input-placeholder">
+            Адрес доставки
+          </label>
         </div>
-        <input
-          type="text"
-          placeholder="Телефон"
-          className="order-form__contact-info-input"
-          required
-        />
       </fieldset>
 
       <fieldset className="order-form__payment-methods">
@@ -74,19 +86,36 @@ const FormOrder = () => {
           Способ оплаты
         </legend>
         <div className="order-form__payment-methods-item">
-          <input type="radio" id="offline" name="payment-method" className="order-form__payment-input"/>
-          <label htmlFor="offline" className="order-form__payment-input-label">Оплата наличными или картой курьеру</label>
+          <input
+            type="radio"
+            id="offline"
+            name="payment-method"
+            className="order-form__payment-input"
+          />
+          <label htmlFor="offline" className="order-form__payment-input-label">
+            Оплата наличными или картой курьеру
+          </label>
         </div>
         <div className="order-form__payment-methods-item">
-          <input type="radio" id="online" name="payment-method" className="order-form__payment-input"/>
-          <label htmlFor="online" className="order-form__payment-input-label">Оплата картой онлайн на сайте</label>
+          <input
+          checked 
+            disabled
+            type="radio"
+            id="online"
+            name="payment-method"
+            className="order-form__payment-input"
+          />
+          <label htmlFor="online" className="order-form__payment-input-label">
+            Оплата картой онлайн на сайте
+          </label>
         </div>
       </fieldset>
       <div className="order-form__btn-container">
-        <Button text='Оформить заказ'></Button>
+        <Button text="Оформить заказ"></Button>
       </div>
       <span className="order-form__privacy-policy">
-        Нажимая кнопку «Оформить заказ» вы соглашаетесь с политикой конфиденциальности
+        Нажимая кнопку «Оформить заказ» вы соглашаетесь с политикой
+        конфиденциальности
       </span>
     </form>
   );

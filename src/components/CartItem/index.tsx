@@ -28,17 +28,27 @@ const CartItem = ({
       </div>
       <div className="cart-item__counts-info">
         <div className="cart-item__counts-controller">
-          <button className="cart-item__counts-controller-btn">-</button>
           <input
+            className="cart-item__counts-controller-btn"
+            value="-"
+            type="button"
+            disabled
+          />
+          <input
+            min="1"
             type="number"
             defaultValue="1"
             className="cart-item__counts-controller-input"
           />
-          <button className="cart-item__counts-controller-btn">+</button>
+          <input
+            className="cart-item__counts-controller-btn"
+            value="+"
+            type="button"
+          />
         </div>
         <div className="cart-item__cost-info">{cost}руб</div>
       </div>
-      <CrossSvg setActive={() => {console.log(1)}} styles="cart-item__cross"></CrossSvg>
+      <CrossSvg setActive={() => {}} styles="cart-item__cross"></CrossSvg>
     </div>
   );
 };

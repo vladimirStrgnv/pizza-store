@@ -1,99 +1,168 @@
 .order-form {
     display: block;
 
-}
+    &__order-details {
+        margin-bottom: 20px;
+    }
 
-.order-form__order-details{
-    margin-bottom: 20px;
-}
+    &__title {
+        margin-bottom: 24px;
+        font-family: 'Alegreya';
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
 
-.order-form__title {
-    margin-bottom: 24px;
-    font-family: 'Alegreya';
-    font-weight: 700;
-    font-size: 1.7rem;
-}
+    &__cart-list {
+        margin-bottom: 10px;
+    }
 
-.order-form__cart-list {
-    margin-bottom: 10px;
-}
+    &__cart-list-item {
+        padding: 8px 0;
+        border-top: 1px rgba(220, 223, 226, 1) solid;
+    }
 
-.order-form__cart-list-item {
-    padding: 8px 0 ;
-    border-top: 1px rgba(220, 223, 226, 1) solid;
-}
+    &__cart-list-item:last-child {
+        border-bottom: 1px rgba(220, 223, 226, 1) solid;
+    }
 
-.order-form__cart-list-item:last-child {
-    border-bottom: 1px rgba(220, 223, 226, 1) solid;
-}
+    &__total-cost {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-.order-form__total-cost {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+    &__total-cost-title {
+        margin-right: 20px;
+        font-family: 'Alegreya';
+        font-weight: 700;
+    }
 
-.order-form__total-cost-title {
-    margin-right: 20px;
-    font-family: 'Alegreya';
-    font-weight: 700;
-}
+    &__total-cost-value {
+        font-family: 'Alegreya';
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
 
-.order-form__total-cost-value {
-    font-family: 'Alegreya';
-    font-weight: 700;
-    font-size: 1.8rem;
-}
+    &__contact-info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
 
-.order-form__contact-info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 32px;
-}
+    &__user-contact-info {
+        margin-bottom: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
 
-.order-form__user-contact-info {
-    margin-bottom: 24px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+        &-input {
+            width: 100%;
+            padding: 8px;
+            height: 44px;
+            border: 2px solid rgba(196, 199, 202, 1);
+            border-radius: 5px;
+            transition: 0.4s;
 
-.order-form__contact-info-input {
-    padding: 8px;
-    height: 44px;
-    border: 1px solid rgba(196, 199, 202, 1);
-    border-radius: 2px;
-}
+            &-wrap {
+                position: relative;
 
-.order-form__contact-info-tel-input {
-    width: 48%;
-}
+                &-name {
+                    width: 48%;
+                }
 
-.order-form__contact-info-name-input {
-    width: 48%;
-}
+                &-tel {
+                    width: 48%;
+                }
+            }
 
-.order-form__payment-methods-title {
-    margin-bottom: 12px;
-    font-family: 'Alegreya';
-    font-weight: 700;
-}
+            &-placeholder {
+                top: 0;
+                left: 0;
+                padding: 12px;
+                position: absolute;
+                transition: 0.2s ease all;
+                pointer-events: none;
+                font-family: 'Roboto';
+                font-size: 0.8rem;
+                color: rgba(166, 166, 166, 1);
+            }
 
-.order-form__payment-methods-item {
-    margin-bottom: 16px;
-}
+            &:hover {
+                border-color: rgba(0, 0, 0, 1);
+            }
 
-.order-form__payment-input {
-    margin-right: 8px;
-}
+            &:focus {
+                border-color: rgba(143, 201, 255, 1);
+            }
 
-.order-form__btn-container {
-    margin-bottom: 23px;
-}
+            &:focus+&-placeholder,
+            &:valid+&-placeholder {
+                top: -12%;
+                left: 10px;
+                padding: 0px 5px 0px 5px;
+                background: #ffffff;
+                color: rgba(63, 143, 229, 1);
+                font-size: 0.65rem;
+            }
 
-.order-form__privacy-policy {
-    font-family: 'Roboto';
-    font-size: 0.7rem;
-    color: rgba(132, 138, 154, 1);
-}
+            :disabled {
+                background-color: rgba(238, 240, 243, 1);
+            }
+        }
+    }
 
+    &__contact-info-tel-input {
+        width: 48%;
+    }
+
+    &__payment-methods-title {
+        margin-bottom: 12px;
+        font-family: 'Alegreya';
+        font-weight: 700;
+    }
+
+    &__payment-methods-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__payment-input {
+        height: 20px;
+        width: 20px;
+        position: relative;
+        border: 1px solid rgba(196, 199, 202, 1);
+
+        &:hover {
+            border-color: rgba(0, 0, 0, 1);
+        }
+
+        &:checked {
+            border-color: rgba(0, 0, 0, 1);
+        }
+
+        &:checked:before {
+            background-color: rgba(229, 45, 45, 1);
+        }
+
+        &:disabled {
+            background-color: rgba(241, 241, 241, 1);
+            border-color: rgba(196, 199, 202, 1);
+        }
+
+        &:disabled:before {
+            background-color: rgba(178, 178, 178, 1);
+        }
+    }
+
+    &__btn-container {
+        margin-bottom: 23px;
+    }
+
+    &__privacy-policy {
+        font-family: 'Roboto';
+        font-size: 0.7rem;
+        color: rgba(132, 138, 154, 1);
+    }
+
+}

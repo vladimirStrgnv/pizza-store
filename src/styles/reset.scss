@@ -71,6 +71,30 @@ button, input[type="submit"] {
     cursor: pointer;
 }
 
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+
+    &:checked:before {
+        content: "";
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%; 
+        left: 50%;
+        border-radius: 50%;
+
+    }
+
+}
+
+  
 input:focus, input:active,
 button:focus, button:active {
     outline: none;

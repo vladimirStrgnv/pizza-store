@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
 
-.visitors-info__number {
-    font-size: 1.35rem;
-    text-transform: uppercase;
-    font-family: 'Alegreya';
-    font-weight: 900;
-    line-height: 32px;
-    white-space: nowrap; 
-}
+    &__number {
+        font-size: 1.35rem;
+        text-transform: uppercase;
+        font-family: 'Alegreya';
+        font-weight: 900;
+        line-height: 32px;
+        white-space: nowrap; 
+    }
 
-.visitors-info__working-days {
-    color: rgba(132, 138, 154, 1);
-    font-size: 0.70rem;
-    font-family: 'Roboto';
+    &__working-days {
+        color: rgba(132, 138, 154, 1);
+        font-size: 0.70rem;
+        font-family: 'Roboto';
+    }
 }
