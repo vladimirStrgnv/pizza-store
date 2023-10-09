@@ -6,13 +6,13 @@ const Nav = () => {
     <nav className="nav">
       <ul className="nav__link-list">
         <li>
-          <NavItem text="Меню"></NavItem>
+          <NavItem text="Меню" link="menu"></NavItem>
         </li>
         <li>
-          <NavItem text="О нас"></NavItem>
+          <NavItem text="О нас" link="/"></NavItem>
         </li>
         <li>
-          <NavItem text="Контакты"></NavItem>
+          <NavItem text="Контакты" link="contacts"></NavItem>
         </li>
       </ul>
     </nav>

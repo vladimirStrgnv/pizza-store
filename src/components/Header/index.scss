@@ -40,20 +40,20 @@
         justify-content: space-between;
         align-items: flex-end;
         width: 48%;
-    }
 
-    &__list-options-container-first-item {
-        width: 85%;
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-    }
+        &-first-item {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
 
-    &__list-options-container-second-item {
-        min-height: 39px;
-        justify-content: space-between;
-        display: flex;
-        align-items: center;
+        &-second-item {
+            min-height: 39px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__visitors-info-container {
@@ -135,7 +135,6 @@
 @media (max-width: 320px) { 
     .header {
         &__list-options-container {
-
 
             &-first-item {
                 width: 65%;

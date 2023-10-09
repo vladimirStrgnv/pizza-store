@@ -13,7 +13,9 @@ const PromotionSection = () => {
           <p className="promotion__description">
             Бесплатная и быстрая доставка за час в любое удобное для вас время
           </p>
-          <Button text={"ВЫБРАТЬ ПИЦЦУ"}></Button>
+          <div className="promotion__btn-container">
+            <Button text={"ВЫБРАТЬ ПИЦЦУ"}></Button>
+          </div>
         </div>
         <img
           className="promotion__pizza-img"

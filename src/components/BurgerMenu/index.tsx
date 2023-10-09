@@ -12,7 +12,7 @@ interface IBurgerMenu {
 
 const BurgerMenu: React.FC<IBurgerMenu> = ({ isActive, onClick }) => {
   return (
-    <div className={isActive ? `menu active` : `menu`}>
+    <nav className={isActive ? `menu active` : `menu`}>
       <div className={"menu__blur"} onClick={() => onClick()}></div>
       <div className={"menu__content"}>
         <div className={"menu__header"}>
@@ -23,13 +23,13 @@ const BurgerMenu: React.FC<IBurgerMenu> = ({ isActive, onClick }) => {
         </div>
         <ul className={"menu__link-list"}>
           <li className={"menu__link-list-item"} onClick={() => onClick()}>
-            <NavItem text='меню'></NavItem>
+            <NavItem text='меню' link="menu"></NavItem>
           </li>
           <li className={"menu__link-list-item"} onClick={() => onClick()}>
-            <NavItem text='О нас'></NavItem>
+            <NavItem text='О нас' link="/"></NavItem>
           </li>
           <li className={"menu__link-list-item"} onClick={() => onClick()}>
-            <NavItem text='Контакты'></NavItem>
+            <NavItem text='Контакты' link="contacts"></NavItem>
           </li>
         </ul>
         <div className="menu__footer">
@@ -38,7 +38,7 @@ const BurgerMenu: React.FC<IBurgerMenu> = ({ isActive, onClick }) => {
             <button className="menu__switch-lang-btn">ENGLISH</button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -7,6 +7,10 @@
 
     }
 
+    &__btn-container {
+        height: 60px;
+    }
+
     &__pizza-img {
         display: block;
         position: absolute;
@@ -59,6 +63,11 @@
         &__container {
          padding: 40px 0 112px 0;
         }
+
+        &__btn-container {
+            height: 52px;
+        }
+
         &__order-info-container {
             margin-bottom: 15%;
         }
@@ -73,9 +82,13 @@
 
 
         &__title {
-            font-size: 4rem;
+            font-size: 3.6rem;
             margin-bottom: 5px;
             text-wrap: wrap;
+        }
+
+        &__description { 
+            margin-bottom: 20px;
         }
     }
 
@@ -83,9 +96,11 @@
 
 @media (max-width: 480px) {
     .promotion {
+        
         &__container {
         padding-top: 300px;
         }
+
         &__pizza-img {
             max-width: 90%;
         }
@@ -100,7 +115,8 @@
             letter-spacing: 0.1px;
         }
         
-        &__description {
+        &__description { 
+            margin-bottom: 30px;
             font-size: 1.2rem;
         }
     

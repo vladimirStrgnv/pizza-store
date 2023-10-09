@@ -48,6 +48,11 @@
             transform: none;
             cursor: pointer;
 
+            &:hover {
+                filter: invert(10%) sepia(97%) saturate(6902%) hue-rotate(0deg) brightness(90%) contrast(104%);
+
+                color: #ff0000;
+            }
        
         }
     }

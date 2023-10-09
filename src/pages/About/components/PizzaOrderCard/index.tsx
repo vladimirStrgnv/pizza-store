@@ -70,7 +70,7 @@ const PizzaOrderCard = ({
           </div>
           <h3 className="pizza-card__min-cost">От {cost} руб.</h3>
           <div className="pizza-card__btn-container">
-            <Button text="Заказать"></Button>
+            <Button text="ЗАКАЗАТЬ"></Button>
           </div>
           <div className="pizza-card__mobile-btn-container">
             <Button text={`от ${cost} руб.`}></Button>

@@ -41,6 +41,7 @@
         font-family: 'Alegreya';
         font-weight: 700;
         font-size: 1.8rem;
+        margin-right: 10px;
     }
 
     &__contact-info {
@@ -87,6 +88,19 @@
                 color: rgba(166, 166, 166, 1);
             }
 
+            &-warn  {
+                position: absolute;
+                bottom: -40%;
+                left: 0;
+                color: rgba(251, 122, 122, 1);
+                font-size: 0.8rem;
+                display: none;
+                
+                &--visible {
+                    display: block;
+                }
+            }
+
             &:hover {
                 border-color: rgba(0, 0, 0, 1);
             }
@@ -95,14 +109,30 @@
                 border-color: rgba(143, 201, 255, 1);
             }
 
+            &:invalid:focus {
+                border-color: rgba(251, 122, 122, 1);
+            }
+
             &:focus+&-placeholder,
             &:valid+&-placeholder {
                 top: -12%;
                 left: 10px;
                 padding: 0px 5px 0px 5px;
                 background: #ffffff;
-                color: rgba(63, 143, 229, 1);
                 font-size: 0.65rem;
+            }
+
+            &:valid+&-placeholder {
+                color: rgba(166, 166, 166, 1);
+            }
+
+            &:focus:valid+&-placeholder {
+                color: rgba(63, 143, 229, 1);
+
+            }
+            
+            &:invalid:focus +&-placeholder {
+                color: red;
             }
 
             :disabled {
@@ -157,12 +187,21 @@
 
     &__btn-container {
         margin-bottom: 23px;
+        height: 52px;
     }
 
     &__privacy-policy {
         font-family: 'Roboto';
         font-size: 0.7rem;
         color: rgba(132, 138, 154, 1);
+    }
+}
+
+@media (max-width: 576px) {
+    .order-form {
+        &__btn-container {
+            height: 40px;
+        }
     }
 
 }

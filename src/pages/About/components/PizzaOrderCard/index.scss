@@ -69,7 +69,6 @@
     &__size-title {
         font-size: 0.7rem;
         font-family: 'Roboto';
-    
     }
     
     &__size-variants {
@@ -104,22 +103,23 @@
         height: 28px;
         background-color: rgba(255, 255, 255, 1);
         transition: 0.4s;
+
+        &--small{
+            left: 0%;
+        }
+
+        &--medium {
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, 0%) 
+        }
+
+        &--big{
+            left: 100%;
+            transform: translate(-100%, 0%)
+        }
     }
-    
-    &__size-slider--small{
-        left: 0%;
-    }
-    
-    &__size-slider--medium {
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, 0%) 
-    }
-    
-    &__size-slider--big{
-        left: 100%;
-        transform: translate(-100%, 0%) }
-    
+        
     &__min-cost {
         font-size: 1.3rem;
         font-family: 'Roboto';
@@ -127,6 +127,7 @@
     }
     
     &__btn-container {
+        height: 52px;
         width: 100%;
     }
     
@@ -144,6 +145,10 @@
             height: 196px;
             width: 196px;
         }
+
+        &__btn-container {
+            height: 40px;
+        }
     }
 }
 
@@ -157,51 +162,50 @@
         align-items: flex-start;
 
         
-    &__type {
-        height: 12px;
-        width: 12px;
-        top: 4px;
-        left: 4px;
-    }
+        &__type {
+            height: 12px;
+            width: 12px;
+            top: 4px;
+            left: 4px;
+        }
 
-    &__img-container {
-        margin-right: 5px;
-        height: 77px;
-        width: 77px;
-        min-width: 77px;
-    }
+        &__img-container {
+            margin-right: 5px;
+            height: 77px;
+            width: 77px;
+            min-width: 77px;
+        }
 
-    &__info {
-        max-width: 164px;
-        align-items: flex-start;
-        padding-right: 5px;
-    }
+        &__info {
+            max-width: 164px;
+            align-items: flex-start;
+            padding-right: 5px;
+        }
 
-    &__composition {
-        text-align: left;
-    }
+        &__composition {
+            text-align: left;
+        }
 
-    &__order-params-info {
-        align-items: flex-start;
+        &__order-params-info {
+            align-items: flex-start;
 
-    }
+        }
 
-    &__min-cost {
-        display: none;
-    }
+        &__min-cost {
+            display: none;
+        }
 
-    &__btn-container {
-        max-width: 120px;
-    }
+        &__btn-container {
+            display: none;
+            max-width: 120px;
 
-    &__btn-container {
-        display: none;
-    }
+        }
 
-    &__mobile-btn-container {
-        display: block;
-    }
-
+        &__mobile-btn-container {
+            display: block;
+            width: 80%;
+            height: 28px;
+        }
     }
 
 }
