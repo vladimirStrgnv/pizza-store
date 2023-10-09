@@ -40,8 +40,8 @@ const FormOrder = () => {
               onChange={(e)=> validateName(e)}
               type="text"
               className="order-form__user-contact-info-input"
-              pattern="[a-zA-Z, а-яА-Я]*"
-              required
+              pattern="[a-zA-Z, а-яА-Я]*$"
+              
             />
             <label className="order-form__user-contact-info-input-placeholder">
               Ваше имя
@@ -53,7 +53,7 @@ const FormOrder = () => {
             <input
               type="tel"
               className="order-form__user-contact-info-input"
-              required
+              pattern="[^\s*$["
             />
             <label className="order-form__user-contact-info-input-placeholder">
               Телефон
@@ -64,7 +64,7 @@ const FormOrder = () => {
           <input
             type="tel"
             className="order-form__user-contact-info-input"
-            required
+            
           />
           <label className="order-form__user-contact-info-input-placeholder">
             Адрес доставки
