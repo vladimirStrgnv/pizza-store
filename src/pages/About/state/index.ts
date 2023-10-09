@@ -10,7 +10,8 @@ interface Pizza {
         type: string
     },
     cost: number,
-    type: string
+    type: string,
+    imgIndex: number
 
 }
 

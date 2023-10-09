@@ -27,6 +27,7 @@ export const pizzaListData = [
     },
     cost: 699,
     type: "spicy",
+    imgIndex: 0
   },
   {
     title: "Маргарита",
@@ -38,6 +39,8 @@ export const pizzaListData = [
     },
     cost: 479,
     type: "meat",
+    imgIndex: 1
+
   },
   {
     title: "Барбекю",
@@ -49,6 +52,8 @@ export const pizzaListData = [
     },
     cost: 699,
     type: "meat",
+    imgIndex: 2
+
   },
   {
     title: "Вегетарианская",
@@ -60,6 +65,7 @@ export const pizzaListData = [
     },
     cost: 399,
     type: "vegetable",
+    imgIndex: 3
   },
   {
     title: "Мясная",
@@ -71,6 +77,7 @@ export const pizzaListData = [
     },
     cost: 699,
     type: "spicy",
+    imgIndex: 4
   },
   {
     title: "Овощная",
@@ -82,6 +89,7 @@ export const pizzaListData = [
     },
     cost: 479,
     type: "vegetable",
+    imgIndex: 5
   },
   {
     title: "Римская",
@@ -93,6 +101,7 @@ export const pizzaListData = [
     },
     cost: 699,
     type: "spicy",
+    imgIndex: 6
   },
   {
     title: "С грибами",
@@ -104,6 +113,7 @@ export const pizzaListData = [
     },
     cost: 399,
     type: "cheese",
+    imgIndex: 7
   },
   {
     title: "Сырная",
@@ -115,6 +125,7 @@ export const pizzaListData = [
     },
     cost: 699,
     type: "cheese",
+    imgIndex: 8
   },
   {
     title: "Четыре сыра",
@@ -126,6 +137,7 @@ export const pizzaListData = [
     },
     cost: 479,
     type: "cheese",
+    imgIndex: 9
   },
   {
     title: "Пепперони Фреш с томатами",
@@ -137,6 +149,7 @@ export const pizzaListData = [
     },
     cost: 699,
     type: "meat",
+    imgIndex: 10
   },
   {
     title: "Ветчина и сыр",
@@ -148,6 +161,7 @@ export const pizzaListData = [
     },
     cost: 399,
     type: "meat",
+    imgIndex: 11
   },
 ];
 

@@ -30,7 +30,7 @@ const PizzaAssortmentSection = () => {
         {state.filtredPizza.map((pizza, index) => (
           <li className="pizza-assortment__list-item" key={index}>
             <PizzaOrderCard
-              imgIndex={index}
+              imgIndex={pizza.imgIndex}
               title={pizza.title}
               composition={pizza.composition}
               cost={pizza.cost}
