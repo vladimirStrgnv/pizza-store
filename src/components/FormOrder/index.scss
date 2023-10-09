@@ -41,12 +41,19 @@
         font-family: 'Alegreya';
         font-weight: 700;
         font-size: 1.8rem;
+        margin-right: 10px;
     }
 
     &__contact-info {
         display: flex;
         flex-direction: column;
         margin-bottom: 32px;
+
+        &__title {
+            margin-bottom: 12px;
+            font-family: 'Alegreya';
+            font-weight: 700;
+        }
     }
 
     &__user-contact-info {
@@ -55,65 +62,25 @@
         display: flex;
         justify-content: space-between;
 
-        &-input {
-            width: 100%;
-            padding: 8px;
-            height: 44px;
-            border: 2px solid rgba(196, 199, 202, 1);
-            border-radius: 5px;
-            transition: 0.4s;
-
-            &-wrap {
-                position: relative;
-
-                &-name {
-                    width: 48%;
-                }
-
-                &-tel {
-                    width: 48%;
-                }
-            }
-
-            &-placeholder {
-                top: 0;
-                left: 0;
-                padding: 12px;
-                position: absolute;
-                transition: 0.2s ease all;
-                pointer-events: none;
-                font-family: 'Roboto';
-                font-size: 0.8rem;
-                color: rgba(166, 166, 166, 1);
-            }
-
-            &:hover {
-                border-color: rgba(0, 0, 0, 1);
-            }
-
-            &:focus {
-                border-color: rgba(143, 201, 255, 1);
-            }
-
-            &:focus+&-placeholder,
-            &:valid+&-placeholder {
-                top: -12%;
-                left: 10px;
-                padding: 0px 5px 0px 5px;
-                background: #ffffff;
-                color: rgba(63, 143, 229, 1);
-                font-size: 0.65rem;
-            }
-
-            :disabled {
-                background-color: rgba(238, 240, 243, 1);
-            }
+        &-input-name-wrap {
+            position: relative;
+            width: 48%;
         }
+
+        &-input-tel-wrap {
+            position: relative;
+            width: 48%;
+        }
+
+        
+        &-input-adres-wrap {
+            position: relative;
+            width: 100%;
+        }
+
     }
 
-    &__contact-info-tel-input {
-        width: 48%;
-    }
+
 
     &__payment-methods-title {
         margin-bottom: 12px;
@@ -157,12 +124,21 @@
 
     &__btn-container {
         margin-bottom: 23px;
+        height: 52px;
     }
 
     &__privacy-policy {
         font-family: 'Roboto';
         font-size: 0.7rem;
         color: rgba(132, 138, 154, 1);
+    }
+}
+
+@media (max-width: 576px) {
+    .order-form {
+        &__btn-container {
+            height: 40px;
+        }
     }
 
 }

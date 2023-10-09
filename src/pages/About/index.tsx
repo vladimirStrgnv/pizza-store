@@ -6,13 +6,13 @@ import GallerySection from "./components/GallerySection";
 
 const About = () => {
   return (
-    <main>
+    <>
         <PromotionSection></PromotionSection>
         <PizzaAssortmentSection></PizzaAssortmentSection>
         <DeliveryInfoSection></DeliveryInfoSection>
         <AdvantagesSection></AdvantagesSection>
         <GallerySection></GallerySection>
-    </main>
+    </>
   )
 }
 

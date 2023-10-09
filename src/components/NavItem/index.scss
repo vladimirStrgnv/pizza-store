@@ -3,5 +3,9 @@
     text-transform: uppercase;
     font-family: 'Alegreya';
     font-weight: 900;
-    
+
+    &--active {
+        color: rgba(229, 45, 45, 1);
+    }
+
 }

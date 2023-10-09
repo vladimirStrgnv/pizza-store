@@ -6,11 +6,11 @@
         font-size: 1rem;
         font-family: 'Alegreya';
         text-transform: uppercase;
+        &:hover {
+            color: red;
+        }
     }
 
-    &__btn:hover {
-        color: red;
-    }
 
     &__img {
         position: absolute;
@@ -20,7 +20,6 @@
         visibility: hidden;
         transform: translate(-50%, 0%);
         transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
     }
 
     &:hover .pizza-filter__img {
@@ -29,8 +28,6 @@
         visibility: visible;
     }
 }
-
-
 
 @media (max-width: 380px) {
     .pizza-filter {
@@ -49,6 +46,14 @@
             visibility: visible;
             opacity: 1;
             transform: none;
+            cursor: pointer;
+
+            &:hover {
+                filter: invert(10%) sepia(97%) saturate(6902%) hue-rotate(0deg) brightness(90%) contrast(104%);
+
+                color: #ff0000;
+            }
+       
         }
     }
 }

@@ -55,17 +55,17 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-    }
 
-    &__link-list-item {
-        width: 50%;
-        padding: 24px 0;
-        text-align: center;
-        border-bottom: 1px rgba(29, 34, 40, 1) solid;
-    }
+        &-item {
+            width: 50%;
+            padding: 24px 0;
+            text-align: center;
+            border-bottom: 1px rgba(29, 34, 40, 1) solid;
 
-    &__link-list-item:last-child {
-        border-bottom: none;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
     }
 
     &__link{
@@ -73,10 +73,10 @@
         font-family: "Gilroy-Heavy";
         text-transform: uppercase;
         transition: 0.3s;
-    }
 
-    &__link:hover {
-        color: #c5c0b3;;
+        &:hover {
+            color: #c5c0b3;;
+        }
     }
 
     &.active {

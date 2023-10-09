@@ -1,0 +1,78 @@
+.input {
+    width: 100%;
+    padding: 8px;
+    height: 44px;
+    border: 2px solid rgba(196, 199, 202, 1);
+    border-radius: 5px;
+    transition: 0.4s;
+
+    &--focus {
+        border-color: rgba(143, 201, 255, 1);
+    }
+
+    &--invalid {
+        border-color:   rgba(251, 122, 122, 1);
+    }
+
+    &-wrap {
+        position: relative;
+
+        &-name {
+            width: 48%;
+        }
+
+        &-tel {
+            width: 48%;
+        }
+    }
+
+    &-placeholder {
+        top: 0;
+        left: 0;
+        padding: 12px;
+        position: absolute;
+        transition: 0.2s ease all;
+        pointer-events: none;
+        font-family: 'Roboto';
+        font-size: 0.8rem;
+        color: rgba(166, 166, 166, 1);
+
+        &--top {               
+            top: -12%;
+            left: 10px;
+            padding: 0px 5px 0px 5px;
+            background: #ffffff;
+            font-size: 0.65rem;
+        }
+
+        &--invalid {
+            color: rgba(251, 122, 122, 1);
+        }
+
+        &--focus {
+            color: rgba(143, 201, 255, 1);
+        }
+    }
+
+
+    &-warn  {
+        position: absolute;
+        bottom: -40%;
+        left: 0;
+        color: rgba(251, 122, 122, 1);
+        font-size: 0.8rem;
+        display: none;
+        
+        &--visible {
+            display: block;
+        }
+    }
+
+    &:hover {
+        border-color: rgba(0, 0, 0, 1);
+    }
+
+    :disabled {
+        background-color: rgba(238, 240, 243, 1);
+    }
+}

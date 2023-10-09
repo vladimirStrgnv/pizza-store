@@ -11,7 +11,7 @@ const PromotionCarousel = () => {
         imgSrc={0}
       ></PromotionCard>
       <div className="promotion-carousel__nav">
-        <button className="promotion-carousel__nav-btn"></button>
+        <button className="promotion-carousel__nav-btn promotion-carousel__nav-btn--active"></button>
         <button className="promotion-carousel__nav-btn"></button>
         <button className="promotion-carousel__nav-btn"></button>
 

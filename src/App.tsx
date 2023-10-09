@@ -1,15 +1,8 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./pages/About";
+import { RouterProvider } from "react-router";
+import BrowserRouter from "./router";
 
 function App() {
-  return (
-    <div className="app">
-      <Header></Header>
-      <About></About>
-      <Footer></Footer>
-    </div>
-  );
+  return <RouterProvider router={BrowserRouter}></RouterProvider>;
 }
 
 export default App;

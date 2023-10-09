@@ -1,44 +1,33 @@
 import "./index.scss";
+import { choosenProducts } from "../../consts";
 import CartItem from "../CartItem";
-import { pizzaListData } from "../../pages/About/consts";
 import Button from "../Button";
+import React, { useState } from "react";
+import Input from "../Input";
 
 const FormOrder = () => {
+  const nameValidate = /^[a-zA-Z, а-яА-Я]*$/;
+  const telValidate = /^\d+$/;
+  const adresValidate = /^[#.0-9a-zA-Z\s, а-яА-Я]+$/;
+
+
   return (
     <form className="order-form">
       <fieldset className="order-form__order-details">
         <legend className="order-form__title">Ваш заказ</legend>
         <ul className="order-form__cart-list">
-          <li className="order-form__cart-list-item">
-            <CartItem
-              imgIndex={0}
-              title={pizzaListData[0].title}
-              sizeValue={pizzaListData[0].currentSize.value}
-              sizeType={pizzaListData[0].currentSize.type}
-              cost={pizzaListData[0].cost}
-              pizzaType={pizzaListData[0].type}
-            ></CartItem>
-          </li>
-          <li className="order-form__cart-list-item">
-            <CartItem
-              imgIndex={0}
-              title={pizzaListData[0].title}
-              sizeValue={pizzaListData[0].currentSize.value}
-              sizeType={pizzaListData[0].currentSize.type}
-              cost={pizzaListData[0].cost}
-              pizzaType={pizzaListData[0].type}
-            ></CartItem>
-          </li>
-          <li className="order-form__cart-list-item">
-            <CartItem
-              imgIndex={0}
-              title={pizzaListData[0].title}
-              sizeValue={pizzaListData[0].currentSize.value}
-              sizeType={pizzaListData[0].currentSize.type}
-              cost={pizzaListData[0].cost}
-              pizzaType={pizzaListData[0].type}
-            ></CartItem>
-          </li>
+          {choosenProducts.map((pizza, index) => (
+            <li className="order-form__cart-list-item" key={index}>
+              <CartItem
+                imgIndex={pizza.imgIndex}
+                title={pizza.title}
+                sizeValue={pizza.currentSize.value}
+                sizeType={pizza.currentSize.type}
+                cost={pizza.cost}
+                pizzaType={pizza.type}
+              ></CartItem>
+            </li>
+          ))}
         </ul>
         <div className="order-form__total-cost">
           <h3 className="order-form__total-cost-title">Сумма заказа:</h3>
@@ -47,37 +36,18 @@ const FormOrder = () => {
       </fieldset>
 
       <fieldset className="order-form__contact-info">
+        <legend className="order-form__contact-info__title">Контакты</legend>
         <div className="order-form__user-contact-info">
-          <div className="order-form__user-contact-info-input-wrap order-form__user-contact-info-input-wrap-name">
-            <input
-              type="text"
-              className="order-form__user-contact-info-input"
-              required
-            />
-            <label className="order-form__user-contact-info-input-placeholder">
-              Ваше имя
-            </label>
+          <div className="order-form__user-contact-info-input-name-wrap">
+              <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Ваше имя'} type='name'></Input>
           </div>
-          <div className="order-form__user-contact-info-input-wrap order-form__user-contact-info-input-wrap-tel">
-            <input
-              type="tel"
-              className="order-form__user-contact-info-input"
-              required
-            />
-            <label className="order-form__user-contact-info-input-placeholder">
-              Телефон
-            </label>
+          <div className="order-form__user-contact-info-input-tel-wrap">
+              <Input validate={telValidate} warn={'Телефон должен состоять из цифр'} placeholder={'Телефон'} type='tel'></Input>
+
           </div>
         </div>
-        <div className="order-form__user-contact-info-input-wrap">
-          <input
-            type="tel"
-            className="order-form__user-contact-info-input"
-            required
-          />
-          <label className="order-form__user-contact-info-input-placeholder">
-            Адрес доставки
-          </label>
+        <div className="order-form__user-contact-info-input-adres-wrap">
+          <Input validate={adresValidate} warn={'Адрес доставки'} placeholder={'Адрес доставки'} type='tel'></Input>
         </div>
       </fieldset>
 
@@ -98,7 +68,7 @@ const FormOrder = () => {
         </div>
         <div className="order-form__payment-methods-item">
           <input
-          checked 
+            checked
             disabled
             type="radio"
             id="online"
@@ -111,7 +81,7 @@ const FormOrder = () => {
         </div>
       </fieldset>
       <div className="order-form__btn-container">
-        <Button text="Оформить заказ"></Button>
+        <Button text="ОФОРМИТЬ ЗАКАЗ"></Button>
       </div>
       <span className="order-form__privacy-policy">
         Нажимая кнопку «Оформить заказ» вы соглашаетесь с политикой

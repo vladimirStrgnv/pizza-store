@@ -1,10 +1,17 @@
-import { NavLink } from "react-router-dom";
 import './index.scss';
+import { NavLink } from 'react-router-dom';
 
-const NavItem = ({text}) => {
+const NavItem = ({ text, link = "/" }) => {
   return (
-    <a className="nav-item">{text}</a>
-  )
-}
+    <NavLink
+      to={link}
+      className={({ isActive, isPending }) =>
+        isActive ? "nav-item nav-item--active" : "nav-item"
+      }
+    >
+      {text}
+    </NavLink>
+  );
+};
 
 export default NavItem;
