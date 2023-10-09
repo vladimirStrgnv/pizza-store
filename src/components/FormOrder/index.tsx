@@ -7,6 +7,8 @@ import Input from "../Input";
 
 const FormOrder = () => {
   const nameValidate = /^[a-zA-Z, а-яА-Я]*$/;
+  const telValidate = /^\d+$/;
+  const adresValidate = /^[#.0-9a-zA-Z\s, а-яА-Я]+$/;
 
 
   return (
@@ -40,12 +42,12 @@ const FormOrder = () => {
               <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Ваше имя'} type='name'></Input>
           </div>
           <div className="order-form__user-contact-info-input-tel-wrap">
-              <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Телефон'} type='tel'></Input>
+              <Input validate={telValidate} warn={'Телефон должен состоять из цифр'} placeholder={'Телефон'} type='tel'></Input>
 
           </div>
         </div>
         <div className="order-form__user-contact-info-input-adres-wrap">
-          <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Адрес доставки'} type='tel'></Input>
+          <Input validate={adresValidate} warn={'Адрес доставки'} placeholder={'Адрес доставки'} type='tel'></Input>
         </div>
       </fieldset>
 
