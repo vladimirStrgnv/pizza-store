@@ -8,9 +8,14 @@ html {
     font-size: 18px;
 }
 
+.ap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 
 body {
-    padding-top: 180px;
+    position: relative;
     overflow-x: hidden;
     --scrollbar-width: calc(100vw - 100%);
 }
@@ -20,11 +25,6 @@ body {
         font-size: 13px;
     }
 
-    body {
-        padding-top: 140px;
-        overflow-x: hidden;
-        --scrollbar-width: calc(100vw - 100%);
-    }
 }
 
 @media (max-width: 768px) {

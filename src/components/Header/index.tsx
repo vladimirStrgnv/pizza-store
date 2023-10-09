@@ -18,11 +18,11 @@ const Header = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 15) {
-        setScrollStatus(true);
-      } else {
-        setScrollStatus(false);
-      }
+        if (window.scrollY > 0) {
+          setScrollStatus(true);
+        } else {
+          setScrollStatus(false);
+        }
     });
   }, []);
 
