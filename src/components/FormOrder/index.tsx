@@ -36,16 +36,16 @@ const FormOrder = () => {
       <fieldset className="order-form__contact-info">
         <legend className="order-form__contact-info__title">Контакты</legend>
         <div className="order-form__user-contact-info">
-          <div className="order-form__user-contact-info-input-wrap order-form__user-contact-info-wrap-name">
+          <div className="order-form__user-contact-info-input-name-wrap">
               <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Ваше имя'} type='name'></Input>
           </div>
-          <div className="order-form__user-contact-info-input-wrap order-form__user-contact-info-wrap-tel">
+          <div className="order-form__user-contact-info-input-tel-wrap">
               <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Телефон'} type='tel'></Input>
 
           </div>
         </div>
-        <div className="order-form__user-contact-info-input-wrap">
-        <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Адрес доставки'} type='tel'></Input>
+        <div className="order-form__user-contact-info-input-adres-wrap">
+          <Input validate={nameValidate} warn={'Имя должно состоять из букв'} placeholder={'Адрес доставки'} type='tel'></Input>
         </div>
       </fieldset>
 

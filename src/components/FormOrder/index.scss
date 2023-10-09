@@ -62,26 +62,25 @@
         display: flex;
         justify-content: space-between;
 
-        &-input {
-
-            &-wrap {
-                position: relative;
-
-                &-name {
-                    width: 48%;
-                }
-
-                &-tel {
-                    width: 48%;
-                }
-            }
-
+        &-input-name-wrap {
+            position: relative;
+            width: 48%;
         }
+
+        &-input-tel-wrap {
+            position: relative;
+            width: 48%;
+        }
+
+        
+        &-input-adres-wrap {
+            position: relative;
+            width: 100%;
+        }
+
     }
 
-    &__contact-info-tel-input {
-        width: 48%;
-    }
+
 
     &__payment-methods-title {
         margin-bottom: 12px;
